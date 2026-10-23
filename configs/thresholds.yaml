@@ -1,0 +1,7 @@
+version: "risk-bands-v1.0.0"
+purpose: "Illustrative reviewer inputs only; never approval or denial decisions."
+probability: "isotonic_calibrated_default_probability"
+low_upper: 0.05
+medium_upper: 0.15
+# LOW: [0, 0.05); MEDIUM: [0.05, 0.15); HIGH: [0.15, 1].
+# Fixed before test evaluation. These are not validated operational thresholds.

@@ -1,0 +1,53 @@
+[project]
+name = "loan-review"
+version = "0.1.0"
+description = "Human-led consumer loan review assistant scaffold."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "langchain-aws>=0.2,<2",
+    "langgraph>=0.2,<2",
+    "lightgbm>=4,<5",
+    "matplotlib>=3.9,<4",
+    "numpy>=1.26,<3",
+    "optuna>=4,<6",
+    "pandas>=2.2,<4",
+    "polars>=1,<2",
+    "pydantic>=2,<3",
+    "pyyaml>=6,<7",
+    "scikit-learn>=1.5,<2",
+    "shap>=0.46,<1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.11,<2",
+    "pytest>=8,<10",
+    "ruff>=0.9,<1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13"]
+build-backend = "uv_build"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-config --strict-markers"
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "shap.*", "yaml.*"]
+ignore_missing_imports = true

@@ -1,0 +1,706 @@
+# Explicit mappings for the Home Credit application schema and Phase 1 aggregates.
+# Unrecognized future features fail coverage checks; no generic fallback is allowed.
+version: reason-codes-v1.0.0
+purpose: Fixed model evidence for human review; not decisions or causal claims. Direction is SHAP sign,
+  not raw feature monotonicity.
+features:
+  AMT_ANNUITY:
+    code: PAYMENT_BURDEN
+    short_text: Payment and income patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_CREDIT:
+    code: LOAN_AMOUNT
+    short_text: Loan amount and purchase-value patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_GOODS_PRICE:
+    code: LOAN_AMOUNT
+    short_text: Loan amount and purchase-value patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_INCOME_TOTAL:
+    code: PAYMENT_BURDEN
+    short_text: Payment and income patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_DAY:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_HOUR:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_MON:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_QRT:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_WEEK:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  AMT_REQ_CREDIT_BUREAU_YEAR:
+    code: CREDIT_INQUIRIES
+    short_text: Credit-inquiry patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  APARTMENTS_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  APARTMENTS_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  APARTMENTS_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BASEMENTAREA_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BASEMENTAREA_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BASEMENTAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_ACTIVE_COUNT:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_ANNUITY_MEAN:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_ANNUITY_SUM:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_DEBT_MAX:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_DEBT_MEAN:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_DEBT_SUM:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_LIMIT_MEAN:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_LIMIT_SUM:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_MAX:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_MEAN:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_AMT_CREDIT_SUM_SUM:
+    code: BUREAU_BALANCES
+    short_text: Bureau balance and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_CLOSED_COUNT:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_CNT_CREDIT_PROLONG_SUM:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_COUNT:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_CREDIT_DAY_OVERDUE_MAX:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_CREDIT_DAY_OVERDUE_MEAN:
+    code: BUREAU_OVERDUE
+    short_text: Bureau overdue-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_ENDDATE_MAX:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_ENDDATE_MEAN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_ENDDATE_MIN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_MAX:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_MEAN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_CREDIT_MIN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_ENDDATE_FACT_MAX:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_ENDDATE_FACT_MEAN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  BUREAU_DAYS_ENDDATE_FACT_MIN:
+    code: BUREAU_HISTORY
+    short_text: Bureau account-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  CNT_CHILDREN:
+    code: HOUSEHOLD_PROFILE
+    short_text: Reported household patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  CNT_FAM_MEMBERS:
+    code: HOUSEHOLD_PROFILE
+    short_text: Reported household patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  COMMONAREA_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  COMMONAREA_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  COMMONAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  CREDIT_TO_GOODS:
+    code: LOAN_AMOUNT
+    short_text: Loan amount and purchase-value patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  CREDIT_TO_INCOME:
+    code: PAYMENT_BURDEN
+    short_text: Payment and income patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DAYS_EMPLOYED:
+    code: EMPLOYMENT
+    short_text: Employment and income-source patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DAYS_EMPLOYED_SENTINEL:
+    code: EMPLOYMENT
+    short_text: Employment and income-source patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DAYS_ID_PUBLISH:
+    code: REGISTRATION_HISTORY
+    short_text: Registration and identification-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DAYS_LAST_PHONE_CHANGE:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DAYS_REGISTRATION:
+    code: REGISTRATION_HISTORY
+    short_text: Registration and identification-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DEF_30_CNT_SOCIAL_CIRCLE:
+    code: SOCIAL_CREDIT_CONTEXT
+    short_text: Reported social credit-context patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  DEF_60_CNT_SOCIAL_CIRCLE:
+    code: SOCIAL_CREDIT_CONTEXT
+    short_text: Reported social credit-context patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ELEVATORS_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ELEVATORS_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ELEVATORS_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  EMERGENCYSTATE_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ENTRANCES_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ENTRANCES_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ENTRANCES_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  EXT_SOURCE_1:
+    code: EXTERNAL_SCORE
+    short_text: External credit-score patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  EXT_SOURCE_2:
+    code: EXTERNAL_SCORE
+    short_text: External credit-score patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  EXT_SOURCE_3:
+    code: EXTERNAL_SCORE
+    short_text: External credit-score patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_CONT_MOBILE:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_10:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_11:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_12:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_13:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_14:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_15:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_16:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_17:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_18:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_19:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_2:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_20:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_21:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_3:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_4:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_5:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_6:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_7:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_8:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_DOCUMENT_9:
+    code: DOCUMENT_PROFILE
+    short_text: Documentation patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_EMAIL:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_EMP_PHONE:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_MOBIL:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_OWN_CAR:
+    code: ASSET_PROFILE
+    short_text: Reported asset patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_OWN_REALTY:
+    code: ASSET_PROFILE
+    short_text: Reported asset patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_PHONE:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLAG_WORK_PHONE:
+    code: CONTACT_PROFILE
+    short_text: Reported contact-information patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMAX_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMAX_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMAX_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMIN_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMIN_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FLOORSMIN_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  FONDKAPREMONT_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  HOUR_APPR_PROCESS_START:
+    code: APPLICATION_TIMING
+    short_text: Application timing patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  HOUSETYPE_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LANDAREA_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LANDAREA_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LANDAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVE_CITY_NOT_WORK_CITY:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVE_REGION_NOT_WORK_REGION:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAPARTMENTS_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAPARTMENTS_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAPARTMENTS_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAREA_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAREA_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  LIVINGAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NAME_CONTRACT_TYPE:
+    code: LOAN_AMOUNT
+    short_text: Loan amount and purchase-value patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NAME_EDUCATION_TYPE:
+    code: EDUCATION_PROFILE
+    short_text: Reported education patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NAME_HOUSING_TYPE:
+    code: HOUSEHOLD_PROFILE
+    short_text: Reported household patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NAME_INCOME_TYPE:
+    code: EMPLOYMENT
+    short_text: Employment and income-source patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NAME_TYPE_SUITE:
+    code: HOUSEHOLD_PROFILE
+    short_text: Reported household patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAPARTMENTS_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAPARTMENTS_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAPARTMENTS_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAREA_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAREA_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  NONLIVINGAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  OBS_30_CNT_SOCIAL_CIRCLE:
+    code: SOCIAL_CREDIT_CONTEXT
+    short_text: Reported social credit-context patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  OBS_60_CNT_SOCIAL_CIRCLE:
+    code: SOCIAL_CREDIT_CONTEXT
+    short_text: Reported social credit-context patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  OCCUPATION_TYPE:
+    code: EMPLOYMENT
+    short_text: Employment and income-source patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  ORGANIZATION_TYPE:
+    code: EMPLOYMENT
+    short_text: Employment and income-source patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  OWN_CAR_AGE:
+    code: ASSET_PROFILE
+    short_text: Reported asset patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PAYMENT_TO_INCOME:
+    code: PAYMENT_BURDEN
+    short_text: Payment and income patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_ANNUITY_MAX:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_ANNUITY_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_ANNUITY_SUM:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_APPLICATION_MAX:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_APPLICATION_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_APPLICATION_SUM:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_CREDIT_MAX:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_CREDIT_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_CREDIT_SUM:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_DOWN_PAYMENT_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_DOWN_PAYMENT_SUM:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_GOODS_PRICE_MAX:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_GOODS_PRICE_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_AMT_GOODS_PRICE_SUM:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_APPROVED_COUNT:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_CANCELED_COUNT:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_CNT_PAYMENT_MAX:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_CNT_PAYMENT_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_COUNT:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_DAYS_DECISION_MAX:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_DAYS_DECISION_MEAN:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_DAYS_DECISION_MIN:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_RATE_DOWN_PAYMENT_MEAN:
+    code: PREVIOUS_LOAN_AMOUNTS
+    short_text: Previous application amount and payment patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_REFUSED_COUNT:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  PREVIOUS_APPLICATION_UNUSED_OFFER_COUNT:
+    code: PREVIOUS_APPLICATION_HISTORY
+    short_text: Previous application-history patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REGION_POPULATION_RELATIVE:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REGION_RATING_CLIENT:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REGION_RATING_CLIENT_W_CITY:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REG_CITY_NOT_LIVE_CITY:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REG_CITY_NOT_WORK_CITY:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REG_REGION_NOT_LIVE_REGION:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  REG_REGION_NOT_WORK_REGION:
+    code: REGIONAL_PROFILE
+    short_text: Regional and location-consistency patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  TOTALAREA_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  WALLSMATERIAL_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  WEEKDAY_APPR_PROCESS_START:
+    code: APPLICATION_TIMING
+    short_text: Application timing patterns increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BEGINEXPLUATATION_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BEGINEXPLUATATION_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BEGINEXPLUATATION_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BUILD_AVG:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BUILD_MEDI:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
+  YEARS_BUILD_MODE:
+    code: HOUSING_PROFILE
+    short_text: Reported housing characteristics increased modeled default risk.
+    direction: positive_shap_increases_default_log_odds
